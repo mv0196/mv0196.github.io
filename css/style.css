@@ -1,0 +1,139 @@
+* {
+    margin:0;
+    padding:0;
+    background-color: black;
+    color: white;
+}
+html, body {width:100%; overflow-x:hidden;}
+
+.cl-orngrd{
+    color: orangered;
+}
+.cl-orngrd:hover{
+    text-shadow: 0px 0px 20px white;
+}
+
+#logo{
+    font-size: 36px;
+    color: white;
+}
+
+#header nav{
+    background-color: black;
+    max-width: 100%;
+    height: 80px;
+}
+#header .navbar-brand{
+    padding-left: 10px;
+    border-left: 5px solid orangered;
+}
+nav .nav-item{
+    font-size: 20px;
+    padding: 15px 0;
+}
+nav .nav-item:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+
+/*
+INTRO
+*/
+#intro{
+    height: 10  0vh;
+    z-index: 1;
+}
+#intro .row{
+    display: flex;
+    padding-top: 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+#intro .row::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: url('../img/mv.png') center center no-repeat fixed;
+    z-index: 0;
+}
+#intro .row .col-3{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+#intro .row .col-3 ul li{
+    list-style-type: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#intro .row .col-3 ul li a{
+    text-decoration: none;
+    color: orangered;
+}
+#intro .row .col-3 ul li:hover{
+    transform: scale(1.2);
+}
+#intro .row .col-3 ul li a .temp {/*left col-3 icons*/
+    font-size: 24px;
+}
+#intro .row .col-3 ul li a i {
+    color: orangered;
+    font-size: 28px;
+}
+#intro .row .col-3 ul li a i:hover{
+    text-shadow: 0 0 20px white;
+}
+#intro .row .col-6{
+    overflow: hidden;/*It hides the scroll bar while anaimation loads*/
+    color: white;
+}
+
+
+/*
+SKILLS
+*/
+#skills .row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#skills .row .col-8 h1{
+    border-bottom: 2px solid orangered;
+}
+#skills .row h4{
+    text-decoration: underline;
+    text-decoration-color: orangered;
+}
+
+/*
+PROJECTS
+*/
+#projects .row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#projects .row .col-8 h1{
+    border-bottom: 2px solid orangered;
+}
+
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    
+    #intro .row .col-3 ul li a .temp {
+        display: none;
+    }
+ 
+}
