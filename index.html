@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mukul Verma</title>
+    <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -26,10 +27,10 @@
     <section id="intro">
         <div class="container-fluid m-0">
             <div class="row">
-                <div class="col-3 mx-0">
+                <div class="col-3 mx-0 sticky-top">
                     <ul>
-                        <li><a href="#"> <i class="temp fa fa-angle-double-right"></i> Skills</a></li>
-                        <li><a href="#"> <i class="temp fa fa-angle-double-right"></i> Projects</a></li>
+                        <li><a href="#skills"> <i class="temp fa fa-angle-double-right"></i> Skills</a></li>
+                        <li><a href="#projects"> <i class="temp fa fa-angle-double-right"></i> Projects</a></li>
                         <li><a href="https://drive.google.com/file/d/1TCZsVrEhzB7L8rZf4eZmEEMdypTF6Ugh/view?usp=sharing" target='_blank'><i class="temp fa fa-angle-double-right"></i> Resume</a></li>
                     </ul>
                 </div>
@@ -306,6 +307,61 @@
                     </h5>
                 </div>
             </div>
+    </section>
+
+    <section id="projects">
+        <div class="container-fluid">
+            <div class="row pt-5">
+                <div class="col-8">
+                    <h1>Projects</h1>
+                </div>
+            </div>
+            <div class="row mt-3 text-left">
+                <div class="col-8 col-md-6 my-2">
+                    <h4>1. Voice Based Gender Recognition(VBGR):</h4>
+                    <a href="https://github.com/mv0196/Voice_Based_Gender_Classifier" target="_blank"><i class="fa fa-github fa-2x cl-orngrd"></i></a>
+                    <h5>
+                        <ul>
+                            <li>A Python web based application that takes audio file and classifies it into male or female</li>
+                            <li class="my-2">Used Keras functional API for training model and deployed using the FLASK framework.</li>
+                            <li>Got accuracy of 99.5% on test data</li>
+                        </ul>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="row mt-3 text-left">
+                <div class="col-8 col-md-6 my-2">
+                    <h4>2. Live E-Mail Analysis:</h4>
+                    <a href="https://github.com/mv0196/E-Mail-Analysis" target="_blank"><i class="fa fa-github fa-2x cl-orngrd"></i></a>
+                    <h5>
+                        <ul>
+                            <li>Made a desktop application that takes user’s gmail id and password and analyse the mails till date.</li>
+                            <li class="my-2">Used python libraries like imaplib, numpy, pandas, matplotlib, regex at back-end and PyQt5 for front-end .</li>
+                            <li>Provide results in graphical form using matplotlib and PyQtChart.</li>
+                        </ul>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="row mt-3 text-left">
+                <div class="col-8 col-md-6 my-2">
+                    <h4>3. Live Live Weather Info</h4>
+                    <a href="https://github.com/mv0196/Live-Weather-Info" target="_blank"><i class="fa fa-github fa-2x cl-orngrd"></i></a>
+                    <h5>
+                        <ul>
+                            <li>Used weather api to fetch data in the json format and used Django to make a web application.</li>
+                        </ul>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="row text-left">
+                <div class="col-8 col-md-6 text-center">
+                    <a href="https://github.com/mv0196?tab=repositories" class="cl-orngrd" target="_blank"><h4>Much more on github <i class="fa fa-github fa-2x cl-orngrd"></i></h4></a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="js/main.js"></script>
